@@ -13,12 +13,25 @@ body{
 
 ul{
     list-style: none;
-    padding: 0;
+    padding: 0; 
     margin: 0;
 }
 
+
+
+ul li{
+    background-color:#b8aea2;
+    margin-top: 0.625rem;
+    padding-left: 1.25rem;
+}
+
 ul li:nth-child(even){
-    background-color: antiquewhite;
+    background-color: #645138;
+    color: #fff;
+}
+
+input[type = text]{
+    outline: none;
 }
 
 input::placeholder{
@@ -40,3 +53,14 @@ input::placeholder{
     margin:auto;
 }
 
+li .cancel{
+    position: absolute;
+    right: 19%;
+    color: #fff;
+
+}
+
+.cancel:hover{
+    background-color: #b81f1f;
+    padding: 0px 9px ;
+}
