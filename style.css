@@ -1,4 +1,4 @@
-*{
+*, html{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -6,21 +6,18 @@
 }
 
 body{
-    height: 100vh;
+    height: 100vh;  
     font-family: 'Open Sans', sans-serif;
 } 
 
-main{
-    margin-top: 2rem;
-}
 
-ul{
+
+
+ul{ 
     list-style: none;
     padding: 0; 
     margin: 0;
 }
-
-
 
 
 ul li{
@@ -30,7 +27,6 @@ ul li{
     padding-left: 1.25rem;
     font-size: 18px;
     font-family: 'Lato', sans-serif;
-
     transition: 0.2s;
 
   }
@@ -69,16 +65,18 @@ input[type = text]{
 
 input::placeholder{
     color: rgb(37, 202, 37);
-    position: absolute;
-    text-align: left;
-    left: 0.1rem;
-    padding: 1rem;
+    font-size: 16px;
+    
 }
 
 .span{
     width: 3.5rem;
     cursor: pointer;
     padding: 1rem;
+}
+
+.span:hover{
+    opacity: 0.7;
 }
 
 #todo{
@@ -88,7 +86,7 @@ input::placeholder{
 
 li .cancel{
     position: absolute;
-    right: 11.7%;  
+    right: 11.7%;
     color: #fff;
     text-align: center; 
     padding: 0px 8px; 
@@ -98,8 +96,33 @@ li .cancel{
 
 .cancel:hover{
     background-color: #b81f1f;
+    cursor: pointer; 
+
 
 }
 
+
+/* media queries for screen with a minimum size of 320px */
+
+@media screen and (min-width: 320px) {
+
+    li .cancel{
+        right: 0.5%;  
+    
+    }
+
+}
+@media screen and (min-width: 428px) {
+
+    li .cancel{
+        right: 0.1%;   
+    
+    }
+
+    main{
+        margin-top: 0 !important;  
+    }
+
+}
 
 
