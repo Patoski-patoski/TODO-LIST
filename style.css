@@ -7,9 +7,12 @@
 
 body{
     height: 100vh;
-    font-family: 'Lato', sans-serif;
     font-family: 'Open Sans', sans-serif;
 } 
+
+main{
+    margin-top: 2rem;
+}
 
 ul{
     list-style: none;
@@ -19,15 +22,45 @@ ul{
 
 
 
+
 ul li{
     background-color:#b8aea2;
+    position: relative;
     margin-top: 0.625rem;
     padding-left: 1.25rem;
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+
+    transition: 0.2s;
+
+  }
+
+  ul li.checked{
+    background-color: #888;
+    color: #fff;
+    text-decoration: line-through 2px;
+    transition: 0.3s ease-in-out;
 }
+
+ul li.checked::before{
+    content: "";
+    position: absolute;
+    border: #00ff15 solid;
+    border-width:0 0.24rem 0.24rem 0 ;    
+    height: 1rem;
+    transform: rotate(45deg);
+    width: 0.4em;
+    top: 1.3em;
+    margin-top: -1em;
+    left: 0.4em;
+
+}
+
 
 ul li:nth-child(even){
     background-color: #645138;
     color: #fff;
+    cursor: pointer;
 }
 
 input[type = text]{
@@ -55,12 +88,18 @@ input::placeholder{
 
 li .cancel{
     position: absolute;
-    right: 19%;
+    right: 11.7%;  
     color: #fff;
+    text-align: center; 
+    padding: 0px 8px; 
+    transition: 0.3s ease-in-out;
 
 }
 
 .cancel:hover{
     background-color: #b81f1f;
-    padding: 0px 9px ;
+
 }
+
+
+
