@@ -21,6 +21,7 @@ for (let i = 0; i < cancel.length; i++) {
         var closeList = this.parentElement
         closeList.style.display = 'none'
     };
+
 }
 
 var ulList = document.querySelector('ul');

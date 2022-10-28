@@ -49,6 +49,7 @@ ul li.checked::before{
     top: 1.3em;
     margin-top: -1em;
     left: 0.4em;
+    cursor: pointer;
 
 }
 
@@ -56,7 +57,6 @@ ul li.checked::before{
 ul li:nth-child(even){
     background-color: #645138;
     color: #fff;
-    cursor: pointer;
 }
 
 input[type = text]{
@@ -67,6 +67,10 @@ input::placeholder{
     color: rgb(37, 202, 37);
     font-size: 16px;
     
+}
+
+.cancel{
+    cursor: pointer;
 }
 
 .span{
@@ -91,6 +95,7 @@ li .cancel{
     text-align: center; 
     padding: 0px 8px; 
     transition: 0.3s ease-in-out;
+    cursor: pointer;
 
 }
 
